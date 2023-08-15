@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>E-commerce product page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- navbar -->
+      <nav>
+        <div class="nav_container">
+          <div class="nav_left-sec">
+            <img
+              src="./images/icon-menu.svg"
+              id="menu-btn"
+              alt="menu"
+              class="hidden menu"
+            />
+            <img  src="data:image/png;base64,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" alt="logo" class="nav_logo" />
+            <div class="overlay"></div>
+            <ul class="nav_links">
+              <img
+                src="./images/icon-close.svg"
+                alt="close"
+                class="close-btn hidden"
+              />
+            </ul>
+          </div>
+          <div class="nav_right-sec">
+            <!-- Cart -->
+            <div class="cart-container">
+              <button class="cart-btn">
+                <span class="indicator"></span>
+                <img src="./images/icon-cart.svg" alt="cart" class="cart" />
+              </button>
+              <div class="cart-wrp invisible">
+                <p class="cart-heading">Cart</p>
+                <div class="divider"></div>
+                <div class="cart-content empty">
+                  <p>Your cart is empty</p>
+                </div>
+              </div>
+            </div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvkUSAUZtIhALO1OMDWFEogP29FTfUmnS8z5fM9VM6mw&s" alt="avatar" class="avatar" />
+          </div>
+        </div>
+      </nav>
+      <main>
+        <!-- thumbnails -->
+        <section class="thumbnails">
+          <img
+            src="https://m.media-amazon.com/images/I/71zFWcoMvrL._AC_SX679_.jpg"
+            alt="product"
+            class="main-thumbnail invisible-mob"
+          />
+          <div class="mobile-thumb hidden">
+            <img
+              src="https://m.media-amazon.com/images/I/71zFWcoMvrL._AC_SX679_.jpg"
+              class="thumb-mob"
+              alt="product"
+            />
+            <button id="next">
+              <img src="./images/icon-next.svg" alt="next" />
+            </button>
+            <button id="previous">
+              <img src="./images/icon-previous.svg" alt="previos" />
+            </button>
+          </div>
+          <div>
+            <div class="preview">
+              <img
+                class="selected"
+                src="https://m.media-amazon.com/images/I/71zFWcoMvrL._AC_SX679_.jpg"
+                alt=""
+              />
+              <img src="https://m.media-amazon.com/images/I/71OHs-kDqOL._AC_SX679_.jpg" alt="" />
+              <img src="https://m.media-amazon.com/images/I/71vJxnCvDDL._AC_SX679_.jpg" alt="" />
+              <img src="https://m.media-amazon.com/images/I/71uESfTlj+L._AC_SX679_.jpg" alt="" />
+            </div>
+          </div>
+        </section>
+        <!-- content -->
+        <section class="content">
+          <p class="company">typecase</p>
+          <h1 class="title">Typecase Edge Magic Style Keyboard</h1>
+          <p class="info">
+            Gaming Keyboard and Mouse,Retro Steampunk Vintage Typewriter-Style Mechanical Keyboard with White LED Backlit,104-Key Anti-Ghosting Blue Switch Wired USB Metal Panel Round Keycaps(Blue)
+          </p>
+          <div class="price">
+            <div class="new-price">
+              <p class="now">₹1250.00</p>
+              <span>50%</span>
+            </div>
+            <p class="old-price">₹2500.00</p>
+          </div>
+          <div class="buttons">
+            <div class="amount-btn">
+              <button id="minus">
+                <img src="./images/icon-minus.svg" alt="minus" />
+              </button>
+              <p class="amount">0</p>
+              <button id="plus">
+                <img src="./images/icon-plus.svg" alt="plus" />
+              </button>
+            </div>
+            <button class="add_btn">
+              <img src="./images/icon-cart.svg" alt="cart" />
+              Add to cart
+            </button>
+          </div>
+        </section>
+      </main>
+    </div>
+    <!-- Lightbox -->
+    <div class="lightbox invisible">
+      <div class="lightbox-container">
+        <button class="close-lightbox"><img src="./images/icon-close.svg" alt="close"></button>
+        <img
+          src="https://m.media-amazon.com/images/I/71zFWcoMvrL._AC_SX679_.jpg"
+          alt="product"
+          class="main-thumbnail invisible-mob"
+        />
+        <div class="preview">
+          <img
+            class="selected"
+            src="https://m.media-amazon.com/images/I/71zFWcoMvrL._AC_SX679_.jpg"
+            alt=""
+          />
+          <img src="https://m.media-amazon.com/images/I/71OHs-kDqOL._AC_SX679_.jpg" alt="" />
+          <img src="https://m.media-amazon.com/images/I/71vJxnCvDDL._AC_SX679_.jpg" alt="" />
+          <img src="https://m.media-amazon.com/images/I/71uESfTlj+L._AC_SX679_.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
