@@ -258,6 +258,7 @@ main {
 .title {
   font-size: 2.5rem;
   margin-bottom: 2rem;
+  
 }
 .info {
   color: var(--Dark-grayish-blue);
@@ -378,6 +379,12 @@ main {
   /* visibility actions */
   .hidden {
     display: flex;
+  }
+  .info {
+    color: var(--Dark-grayish-blue);
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    text-align: center;
   }
   .invisible-mob {
     display: none;
