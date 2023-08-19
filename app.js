@@ -73,7 +73,7 @@ function addItem() {
                       <img src="https://m.media-amazon.com/images/I/71zFWcoMvrL._AC_SX679_.jpg" class="product-img" alt="product">
                       <div class="product-info">
                         <p class="product-title">Fall Limited Edition Sneakers</p>
-                       <p><span>$1250.00</span> × <span class="number">${amountValue}</span> <b>$${total}</b></p>
+                       <p><span>₹1250.00</span> × <span class="number">${amountValue}</span> <b>₹${total}</b></p>
                       </div>
                       <button class="delete-btn" onclick="deleteItem()"><img src="./images/icon-delete.svg" alt="delete"></button>
                     </div>
